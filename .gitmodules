@@ -1,3 +1,6 @@
 [submodule "_vim/bundle/neobundle.vim"]
 	path = _vim/bundle/neobundle.vim
 	url = https://github.com/Shougo/neobundle.vim.git
+[submodule "chotools"]
+	path = chotools
+	url = https://github.com/kazutomi/chotools.git
