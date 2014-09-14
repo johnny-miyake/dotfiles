@@ -208,7 +208,5 @@ function f_chols {
   \chols "$@" | more
 }
 
-# load environment variables
-source ~/.zshenv
 # load rvm init script
 source /usr/local/rvm/scripts/rvm
