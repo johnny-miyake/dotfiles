@@ -210,3 +210,6 @@ function f_chols {
 
 # load rvm init script
 source /usr/local/rvm/scripts/rvm
+
+DOTENV_PATH="$HOME/.env"
+[ -f $DOTENV_PATH ] && source $DOTENV_PATH
