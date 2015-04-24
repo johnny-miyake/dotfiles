@@ -39,7 +39,6 @@ set encoding=utf-8
 set background=dark
 set fileencoding=utf-8
 set fileencodings=utf-8
-set colorcolumn=80
 colorscheme solarized
 let g:solarized_termcolors=256
 highlight UnwantedSpaceChars ctermbg=red guibg=red
