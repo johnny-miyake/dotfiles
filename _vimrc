@@ -15,7 +15,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " My Bundles here:
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'scrooloose/nerdcommenter'
@@ -39,7 +38,5 @@ set encoding=utf-8
 set background=dark
 set fileencoding=utf-8
 set fileencodings=utf-8
-colorscheme solarized
-let g:solarized_termcolors=256
 highlight UnwantedSpaceChars ctermbg=red guibg=red
 match UnwantedSpaceChars /\s\+$/
