@@ -209,8 +209,15 @@ function f_chols {
   \chols "$@" | more
 }
 
-# load rvm init script
-source /usr/local/rvm/scripts/rvm
+# prefer a user rbenv over a system wide install
+if [ -s "${HOME}/.rbenv/bin" ]; then
+  rbenv_root="${HOME}/.rbenv"
+elif [ -s "/usr/local/rbenv" ]; then
+  rbenv_root="/usr/local/rbenv"
+  export RBENV_ROOT="$rbenv_root"
+fi
 
-DOTENV_PATH="$HOME/.env"
-[ -f $DOTENV_PATH ] && source $DOTENV_PATH
+if [ -n "$rbenv_root" ]; then
+  export PATH="${rbenv_root}/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
